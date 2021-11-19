@@ -1,0 +1,18 @@
+function trigger() {
+    var url = [
+        "URL",
+        "URL",
+        "URL"                                         
+    ];
+    for (var x = 0; x < url.length; x++) {
+        var uri = url[x];
+        try {
+            UrlFetchApp.fetch(uri);
+        } catch (err) {
+            Logger.log(err.message)
+      }
+
+      }
+      }
+
+//Paste your URL for URL
